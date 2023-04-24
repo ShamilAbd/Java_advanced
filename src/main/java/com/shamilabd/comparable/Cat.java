@@ -33,10 +33,10 @@ public class Cat {
 
     @Override
     public String toString() {
-        return "Cat{" +
-                "name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", weight=" + weight +
-                '}';
+        return "Cat{"
+                + "name='" + name + '\''
+                + ", sex='" + sex + '\''
+                + ", weight=" + weight
+                + '}';
     }
 }

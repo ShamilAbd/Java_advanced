@@ -45,7 +45,7 @@ public class ComparableEx {
     public static void catExample() {
         Cat cat1 = new Cat("Angel", "male", 7.3);
         Cat cat2 = new Cat("Devil", "female", 5.4);
-        Cat cat3 = new Cat("Angel", "male", 7.3);//twin cat1
+        Cat cat3 = new Cat("Angel", "male", 7.3); // twin cat1
         Cat cat4 = new Cat("Jack", "male", 6.1);
         Cat cat5 = new Cat("Шамиль", "male", 4.5);
         Cat cat6 = new Cat("Алиса", "female", 6.6);

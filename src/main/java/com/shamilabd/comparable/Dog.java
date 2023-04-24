@@ -35,19 +35,19 @@ public class Dog implements Comparable<Dog> {
 
     @Override
     public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", weight=" + weight +
-                '}';
+        return "Dog{"
+                + "name='" + name + '\''
+                + ", sex='" + sex + '\''
+                + ", weight=" + weight
+                + '}';
     }
 
     @Override
     public int compareTo(Dog otherDog) {
-        int compWeight = (int)((this.getWeight() - otherDog.getWeight()) * 10); // yes, bad idea put long in int.
-        if (compWeight == 0){
+        int compWeight = (int) ((this.getWeight() - otherDog.getWeight()) * 10); // yes, bad idea put long in int.
+        if (compWeight == 0) {
             int compName = this.name.compareTo(otherDog.name);
-            if (compName == 0){
+            if (compName == 0) {
                 return this.sex.compareTo(otherDog.sex);
             }
         }
