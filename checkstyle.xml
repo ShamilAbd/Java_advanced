@@ -99,11 +99,7 @@
         <!-- See http://checkstyle.sf.net/config_misc.html -->
         <module name="ArrayTypeStyle"/>
         <!--<module name="FinalParameters"/>-->
-        <module name="TodoComment">
-          <property name="format" value="TODO\W.*"/>
-          <property name="caseSensitive" value="false"/>
-          <property name="severity" value="warning"/>
-        </module>
+        <module name="TodoComment"/>
         <module name="UpperEll"/>
         <module name="EmptyBlock"/>
         <module name="EmptyBlock">
