@@ -23,6 +23,8 @@ public class Wildcard {
         doubles.add(3.4);
         doubles.add(5.88);
         System.out.println(sumAnyList(doubles));
+
+        System.out.println(ints);
     }
 
     public static double sumAnyList(ArrayList<? extends Number> numbers) {
