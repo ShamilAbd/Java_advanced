@@ -3,6 +3,8 @@ package com.shamilabd.collection;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import static com.shamilabd.Utils.line;
 
 /**
  * @author Abdullin Shamil Ildusovich
@@ -10,7 +12,42 @@ import java.util.List;
  */
 public class LinkedListStudy {
     public static void main(String[] args) {
-        simpleLinkedList();
+        //simpleLinkedList();
+        listAsQueue();
+    }
+
+    private static void listAsQueue() {
+        Queue<String> persons = new LinkedList<>();
+        persons.add("Shoma");
+        persons.add("Vasya");
+        persons.add("Katya"); // в огран. очереди кидает исключение
+        persons.offer("Dima"); // в огран. очереди НЕ кидает исключение
+        persons.offer("Olya");
+        System.out.println(persons);
+        line();
+        System.out.println(persons.element()); // кидает исключения
+        System.out.println(persons.remove());
+        System.out.println(persons);
+        line();
+        System.out.println(persons.peek()); // не кидает исключения
+        System.out.println(persons.remove());
+        System.out.println(persons);
+        line();
+        System.out.println(persons.remove());
+        System.out.println(persons);
+        line();
+        System.out.println(persons.poll());
+        System.out.println(persons);
+        line();
+        System.out.println(persons.remove());
+        System.out.println(persons);
+        line();
+//        System.out.println(persons.remove()); // NoSuchElementException
+//        System.out.println(persons);
+//        line();
+        System.out.println(persons.poll()); // не кидает исключения
+        System.out.println(persons);
+        line();
     }
 
     /*
