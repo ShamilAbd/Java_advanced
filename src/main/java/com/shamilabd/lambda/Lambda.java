@@ -12,22 +12,7 @@ import static com.shamilabd.Utils.line;
  */
 public class Lambda {
     public static void main(String[] args) {
-        Student student1 = new Student("Tanya", 3, 8);
-        Student student2 = new Student("Vasya", 1, 6);
-        Student student3 = new Student("Sonya", 4, 7);
-        Student student4 = new Student("Anna", 3, 7);
-        Student student5 = new Student("Petya", 2, 7);
-        Student student6 = new Student("Dima", 5, 9);
-        Student student7 = new Student("Alesha", 2, 4);
-
-        List<Student> students = new ArrayList<>();
-        students.add(student1);
-        students.add(student2);
-        students.add(student3);
-        students.add(student4);
-        students.add(student5);
-        students.add(student6);
-        students.add(student7);
+        List<Student> students = Student.getStudents();
 
         System.out.println("Курс больше 3: ");
         checkStudent(students, (s) -> s.getCourse() > 3);
