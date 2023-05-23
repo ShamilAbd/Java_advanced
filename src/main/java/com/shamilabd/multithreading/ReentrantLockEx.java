@@ -30,8 +30,8 @@ class Call {
     private final Lock lock = new ReentrantLock();
 
     void mobileCall() {
-        lock.lock();
         try {
+            lock.lock();
             System.out.println("Mobile call started");
             Thread.sleep(2000);
             System.out.println("Mobile call end");
@@ -43,8 +43,8 @@ class Call {
     }
 
     void skypeCall() {
-        lock.lock();
         try {
+            lock.lock();
             System.out.println("skype call started");
             Thread.sleep(4000);
             System.out.println("skype call end");
