@@ -1,6 +1,11 @@
 package com.shamilabd.generics.example;
 
-public abstract class Player {
+import java.io.Serial;
+import java.io.Serializable;
+
+public abstract class Player implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
     private String name;
     private int age;
 
