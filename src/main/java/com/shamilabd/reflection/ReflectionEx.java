@@ -103,6 +103,7 @@ class Employee {
     public String name;
     public String department;
     private double salary;
+    private int secret = 666;
 
     public Employee() {
     }
