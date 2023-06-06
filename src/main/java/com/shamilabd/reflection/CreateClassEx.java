@@ -10,8 +10,9 @@ import java.lang.reflect.Method;
  * @Date 05.06.2023
  */
 public class CreateClassEx {
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException,
-            InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+    public static void main(String[] args)
+            throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException,
+            InstantiationException, IllegalAccessException, NoSuchFieldException {
         Class employeeClass = Class.forName("com.shamilabd.reflection.Employee");
 //        Employee emp = (Employee) employeeClass.newInstance(); // old way
         Constructor<Employee> constructor = employeeClass.getConstructor();
