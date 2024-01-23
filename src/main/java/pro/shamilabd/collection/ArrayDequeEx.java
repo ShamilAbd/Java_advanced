@@ -18,8 +18,10 @@ public class ArrayDequeEx {
         line();
         System.out.println(nums.removeFirst());
         System.out.println(nums.removeLast());
+        System.out.println(nums);
         System.out.println(nums.pollFirst());
         System.out.println(nums.pollLast());
+        System.out.println(nums);
         line();
     }
 }
