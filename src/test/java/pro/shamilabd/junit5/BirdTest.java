@@ -24,6 +24,7 @@ public class BirdTest {
         Assertions.assertEquals("red", beakColor);
     }
 
+    @Test
     public void annotatedMock() {
         System.out.println("--- Annotated mock test ---");
         when(beak.getColor()).thenReturn("red");
@@ -32,6 +33,16 @@ public class BirdTest {
         String beakColor = titmouse.getBeak().getColor();
 
         Assertions.assertEquals("red", beakColor);
+    }
 
+    @Test
+    public void automaticMock() {
+        System.out.println("--- Automatic mock test ---");
+        when(beak.getColor()).thenReturn("red");
+        Bird titmouse = new Bird("Tom", 2, "yellow", beak);
+
+        String beakColor = titmouse.getBeak().getColor();
+
+        Assertions.assertEquals("red", beakColor);
     }
 }

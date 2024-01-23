@@ -9,8 +9,8 @@ public class Bird {
 
     private Beak beak;
 
-    public Bird() {
-    }
+//    public Bird() {
+//    }
 
     public Bird(String name, int age, String color, Beak beak) {
         this.name = name;
