@@ -14,7 +14,7 @@ public class HashMapEx {
     private static void simpleHashMap() {
 //        Map<String, Double> planetWeight = new HashMap<>(9);
 //        Map<String, Double> planetWeight = new HashMap<>(9, 0.9F);
-        Map<String, Double> planetWeight = new HashMap<>();
+        HashMap<String, Double> planetWeight = new HashMap<>();
         planetWeight.put("Earth", 777D);
         planetWeight.put("Mars", 666.6);
         planetWeight.put("Jupiter", 222.222);
@@ -22,6 +22,7 @@ public class HashMapEx {
         planetWeight.put("Venera", 0.3);
         planetWeight.put("Mercury", 159_753_147_852_369_874_521.1);
         planetWeight.put(null, 0.0000001);
+        planetWeight.put("null", null);
 
         System.out.println(planetWeight);
         line();
